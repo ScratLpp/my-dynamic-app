@@ -1,5 +1,13 @@
 {
+  "compilerOptions": {
+    "types": ["node"],
+    "typeRoots": ["./node_modules/@types", "./src"], // Inclure les types Node.js et les types personnalisés
+    "moduleResolution": "node", // Assurer une bonne résolution des modules
+    "esModuleInterop": true, // Assurer la compatibilité avec les modules CommonJS/ES6
+    "skipLibCheck": true // Ignorer les vérifications des types dans les modules externes
+  },
   "files": [],
+  "include": ["src/**/*.ts", "src/**/*.tsx"], // Inclure tous les fichiers source de votre application
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
