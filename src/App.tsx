@@ -1,3 +1,6 @@
+import { Buffer } from 'buffer';
+import process from 'process';
+import crypto from 'crypto-browserify';
 import {
   DynamicContextProvider,
   DynamicWidget, // Assurez-vous que ceci est importé correctement
